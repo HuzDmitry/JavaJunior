@@ -35,6 +35,7 @@ public class Program {
         // Создадим экземпляр класса
         Object personInstance = constructors[0].newInstance(null);
 
+
         Field nameField = personalClass.getDeclaredField("name");
         nameField.setAccessible(true);
         nameField.set(personInstance, "Alice");
@@ -42,6 +43,11 @@ public class Program {
         Field ageField = personalClass.getDeclaredField("age");
         ageField.setAccessible(true);
         ageField.set(personInstance, 30);
+
+        Method[] methods = personalClass.getDeclaredMethods();
+        for (Method method : methods){
+            System.out.println(method.getName());
+        }
 
         Method displayInfoMethod = personalClass.getDeclaredMethod("displayInfo");
         displayInfoMethod.invoke(personInstance);
