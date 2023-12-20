@@ -6,8 +6,8 @@ import java.io.Serializable;
 
 public class Student implements Serializable {
     private String name;
-    private int age;
     @JsonIgnore
+    private int age;
     private transient double GPA;
 
     public Student(String name, int age, double GPA) {

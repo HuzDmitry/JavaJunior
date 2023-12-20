@@ -1,5 +1,6 @@
 package DZSerialization;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.json.JsonMapper;
@@ -31,6 +32,7 @@ public class Program {
         System.out.printf("данные до сохранения в файл: %s\n", student.toString());
         student = (Student) loadObject(file);
         System.out.printf("данные после загрузки из файла: %s\n", student.toString());
+       // saveJson(student);
 
     }
 
@@ -61,4 +63,11 @@ public class Program {
          mapper.writeValue(new File(files), ser);
         System.out.println("сохранение в json файл.");
     }
+    private static void saveJson(Serializable ser) throws JsonProcessingException {
+        ObjectMapper obj = new ObjectMapper();
+        obj.enable(SerializationFeature.INDENT_OUTPUT);
+        String str = obj.writeValueAsString(ser);
+        System.out.println(str);
+    }
+
 }

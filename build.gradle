@@ -16,6 +16,21 @@ dependencies {
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.16.0'
     // https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-xml
     implementation group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml', version: '2.16.0'
+    // https://mvnrepository.com/artifact/com.mysql/mysql-connector-j
+    //implementation group: 'com.mysql', name: 'mysql-connector-j', version: '8.2.0'
+    // https://mvnrepository.com/artifact/org.hibernate/hibernate-core
+   // implementation group: 'org.hibernate', name: 'hibernate-core', version: '6.0.0.Final'
+    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.33'
+// https://mvnrepository.com/artifact/org.hibernate/hibernate-core
+    implementation group: 'org.hibernate', name: 'hibernate-core', version: '5.6.15.Final'
+// https://mvnrepository.com/artifact/org.hibernate/hibernate-c3p0
+   // implementation group: 'org.hibernate', name: 'hibernate-c3p0', version: '5.6.15.Final'
+// https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager
+   // implementation group: 'org.hibernate', name: 'hibernate-entitymanager', version: '5.6.15.Final'
+// https://mvnrepository.com/artifact/org.projectlombok/lombok
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.30'
+
 
 }
 
