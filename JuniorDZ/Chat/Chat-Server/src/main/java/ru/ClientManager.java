@@ -21,7 +21,7 @@ public class ClientManager implements Runnable {
             name = bufferedReader.readLine();
             clients.add(this);
             System.out.println(name + " подключился к чату.");
-            String messages = String.format("Server: %s подключился к чату.\n Чтобы отправить личное сообщение %s, укажите его имя со знаком '!' в начале.\n", name, name);
+            String messages = "Server: " + name + " подключился к чату.\n Чтобы отправить личное сообщение "+ name +", укажите его имя со знаком '!' в начале.\n";
             broadcastMessage(messages);
         }
         catch (IOException e){

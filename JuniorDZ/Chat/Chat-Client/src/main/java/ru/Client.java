@@ -63,9 +63,9 @@ public class Client {
                     int index = message.indexOf(' ');
                     String nameUser = message.substring(0,index);
                     message = message.substring(index);
-                    message = String.format("%s <- %s: %s", nameUser, name ,message);
+                    message = nameUser + " <- " + name + ": " + message;
                 }else {
-                    message = String.format("%s: %s",name, message);
+                    message = name + ": " + message;
                 }
                 bufferedWriter.write(message);
                 bufferedWriter.newLine();
