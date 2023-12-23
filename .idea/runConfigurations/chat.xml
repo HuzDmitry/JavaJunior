@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="chat" type="CompoundRunConfigurationType">
+    <toRun name="ru.geekbrains.chat.client.Program" type="Application" />
+    <toRun name="ru.geekbrains.chat.client.Program (1)" type="Application" />
+    <toRun name="ru.geekbrains.chat.client.Program (2)" type="Application" />
+    <toRun name="ru.geekbrains.chat.server.Program" type="Application" />
+    <method v="2" />
+  </configuration>
+</component>
